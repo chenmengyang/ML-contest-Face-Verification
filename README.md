@@ -1,5 +1,6 @@
 # Face-Verification
 Face-Verification contest: https://inclass.kaggle.com/c/face-verification2
+
 1.
   Face verification is a widely studied research topic, where the goal is to automatically determine whether two images represent the same person.
   The goal of this competition is to develop algorithms for accurate face verification. The goal is to learn to predict whether a pair of images represent the same person (target output = 1) or a different person (target output = 0).
