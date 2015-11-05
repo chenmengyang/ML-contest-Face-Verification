@@ -1,0 +1,5 @@
+1.You can follow the codes in train_NN_deep.m file
+  It train the Neural Network by using Back propagate to get the weights for the hidden layer and the output layer.
+  
+2.You can follow the codes in train_NN_small.m file
+  It train the Neural Network by using Back propagate to get the weights for the hidden layer and the output layer.
