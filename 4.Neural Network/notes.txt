@@ -1,0 +1,5 @@
+1.使用deep feature训练时候，net中间层的weight只有4063列，因为1393行的4096的feature input进来的时候有33个feature无效，都是0
+  test_set中也需要拿掉这33个features
+
+
+2.使用train出来的weight和bias直接forward propagate得到的正确率很低，不知道如何使用这些参数?
