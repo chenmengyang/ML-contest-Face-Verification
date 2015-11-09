@@ -1,0 +1,21 @@
+1.Failed to use the "Estimate Posterior Probabilities"
+  Mdl = fitcecoc(X,Y,'Coding','onevsall','Learners',t,'FitPosterior',1);
+  Warning: Unable to fit posterior probabilities for learner 8 (SVM) because: Some classes
+have one observation only. 
+
+2.Cross Validation could not be implemented.
+  Warning: One or more folds do not contain points from all the groups. 
+
+
+3.Mdl = fitcecoc(X,Y,'Coding','onevsall','Learners','naivebayes');
+  Warning: Unable to fit learner 1 (NaiveBayes) because: A normal distribution cannot be
+fit for the combination of class -1 and predictor x124. The data has zero variance. 
+
+
+
+
+
+
+
+
+84.278536

@@ -1,0 +1,17 @@
+1.修改gradient descend的迭代次数
+2.目前的15维向量是否只可以得到linear的decision boundary,feature map更多特殊features?
+2.修改LR的regulazation参数lambda
+3.最后得到result的距离计算方法,除了Euclidean再试试别的,271维下用什么距离比较好?
+4.推翻LR逻辑,尝试Mutlinominal LR? 原理是什么,能不能用matlab bulid-in functions?
+  mnrfit/mnrval, 维度太大好像不支持，deep feature的4096不支持，维度不大的情况下，效率
+  好像也很低,很久未能得到结果
+
+
+目前对training set测试，正确率only 30.3661%
+根据knn 和 lr目前的状况，似乎small feature不太好用, knn使用deep feature要好得多。。。
+
+这里用deep feature程序简直动不了,有4096维,使用build-in library 一样慢?
+
+目前的想法，LR还可以尝试别的feature, big/bbox? big估计也大了，动不了
+
+svm的可能性?
