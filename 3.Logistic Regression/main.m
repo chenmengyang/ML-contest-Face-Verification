@@ -8,7 +8,7 @@ load('pairs');
 X = trainSet_deep_PCA99;
 [m, n] = size(X);
 X = [ones(m, 1) X];
-lambda = 1;
+lambda = 2;
 % Initialize fitting parameters
 for i=1:271
     fprintf('Training parameters of class%d\n',i);
@@ -17,8 +17,8 @@ for i=1:271
     initial_theta = zeros(n + 1, 1);
     options = optimset('GradObj', 'on', 'MaxIter', 250);
     %[theta(:,i), cost] = fminunc(@(t)(costFunction(t, X, Y)), initial_theta, options);
-    %[cost, grad] = costFunction(initial_theta, X, Y);
-    [theta(:,i), cost] = fmincg(@(t)(costFunction(t, X, Y)), initial_theta, options);
+    %[theta(:,i), cost] = fmincg(@(t)(costFunction(t, X, Y)), initial_theta, options);
+    [theta(:,i), cost] = fmincg(@(t)(costFunctionReg(t, X, Y, lambda)), initial_theta, options);
 end
 
 %calculate the accuracy with training set
@@ -37,5 +37,5 @@ for i=1:size(B,1)
 end
 
 [possible,tmp,result] = get_by_possibility(pairs,B);
-%dlmwrite('LR_result1.csv',result,'precision',15);
+%dlmwrite('LR_result3.csv',result,'precision',15);
 
