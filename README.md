@@ -12,4 +12,3 @@ Face-Verification contest: https://inclass.kaggle.com/c/face-verification2
 
 2.
   I have already transformed the data in Train.zip,Pairs.zip and Test.zip into suitable format as training set and test set which could be loaded into Matlab, if you are using Matlab to program, please directly use the .mat files in the GitHub directory chenmengyang/Face-Verification/0.Data Set.
-  
